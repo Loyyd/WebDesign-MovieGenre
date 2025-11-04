@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Welcome to my personal portfolio - Konrad Kunkel - a professional portfolio about showcasing myself and work experience in the past. Who I am and what I do">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio - Konrad Kunkel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/layout.css"> 
+	<link rel="icon" href="images/favicon.ico" type="image/png">
+</head>
+
+<body>
+    <main class= "main-style">
+	 <header class="page-header">  <!-- A header is the top of the page, indicating what the page is about, including the title-->
+            <div class="header-content">  <!-- A div is an empty block element that is used to organize or group elements together.-->
+                <h1>Konrad Kunkel</h1>
+                <p>Driven by Tech and Business</p>
+            </div>
+        </header>
+        <nav class="page-nav"> <!-- The <nav> tag is there for quick links to navigate between the website and bring structure in your website.-->
+            <a href="#about">About Me</a>
+            <a href="#work">Work Experience</a>
+            <a href="#images">Image Gallery</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+       
+    <!-- An ID gives an element a distinct identifier. With that you can either style this unique element with that ID, or you can jump to that part of the website. (how it is used here)-->
+        <section id="about" class="about-me container">  <!--A Section is similar like a chapter in a book. It covers a specific topic and is there to organize the website.-->
+            <div class="container-content">
+                <h2>About Me</h2>
+                <p> am a first year student at DCU with a strong interest in programming and Design. Since I was young I enjoyed programming games and starting my own personal projects. </p>
+                <p>It's a hobby for me that turned into a job and now I want to further develop my skills by studying. I am passionate about 3d printing and motorcycles. I like to drive around and enjoy nature on my ride. I also enjoy spending time with family and friends.</p>
+                <h3>Hobbies</h3>
+                <ul>
+                    <li>Volleyball</li>
+                    <li>Diving</li>
+                    <li>Motorcycling</li>
+                    <li>Programming, 3D Printing</li>
+                    <li>Listening to Music</li>
+                </ul>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/konrad-kunkel-21a956256/" target="_blank">
+                        <img src="images/linkedin.svg" alt="LinkedIn" class="social-icon">
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://www.instagram.com/konrad.k3d/" target="_blank">
+                        <img src="images/instagram.svg" alt="Instagram" class="social-icon">
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section id="work" class="work-experience container">
+            <div class="container-content">
+                <h2>Work Experience</h2>
+                <p>I started my work experience as a bartender, where I learned for a long time how to deal with good communication, teamwork and multitasking skills. I learned how do work under high pressure and take responsibility.</p>
+                <p>After some time I switched over finding a job where I could use my 3d modeling skills to work for other companies. The job developed my skills and supported me on my personal journey. The 3d industry taught me how to apply my creativity and teamwork in a professional setting. I learned a lot and got opportunities to work on a feature film.</p>
+                <p>On my may I learned how to 3d model, sculpt, texture, rig and render out various 3d projects.</p>
+                <p class="download-button-container"><a href="download/resume.pdf" download class="download-link">Download Resume (test file)</a></p>
+            </div>
+        </section>
+				<hr>
+        <section id="images" class="image-gallery container">
+            <div class="container-content">
+                <h2>Image Gallery</h2>
+                <figure class="an-image">
+                        <img src="images/600/3dprinting.webp" alt="A photo of a 3d printer in action">
+                        <figcaption class="image-caption">3D printing has always been one of my hobbies. Since I like 3d designing, the ability to print my own models gives me the freedom of creativity</figcaption>
+                    </figure>                   
+                    <figure class="an-image">
+                        <img src="images/600/motorcycle.webp" alt="A photo of a motorcycle on the road">
+                        <figcaption class="image-caption">I love motorcycles. When I was 16 I started my first license and driving different bikes. Now I enjoy doing trips all around Europe.</figcaption>
+                    </figure> 
+
+                    <figure class="an-image">
+                        <img src="images/600/traveling.webp" alt="A photo of a waterfall with a person standing in front">
+                        <figcaption class="image-caption">I took a gap-year after my A-levels to travel around in europe and volunteering in different places. I love seeing the world and traveling to new places.</figcaption>
+                    </figure>
+            </div>
+            
+        </section>
+        <hr>
+        <section id="contact" class="contact-me container">
+            <div class="container-content">
+                <h2>Contact Me</h2>
+                <form action="https://formspree.io/konrad.kunkel2@mail.dcu.ie" method="post">
+                    <p>
+                            <label for="contact-name">Your Name</label>
+                            <input id="contact-name" type="text" name="contact-name">
+                        </p>
+                        <p>
+                            <label for="contact-email">Your email address</label>
+                            <input id="contact-email" type="email" name="contact-email"> </p>
+                        <p>
+                            <label for="contact-phone">Your phone number</label>
+                            <input id="contact-phone" type="tel" name="contact-phone"> </p>
+                        <p>
+                            <label for="contact-message">Your message</label>
+                            <textarea id="contact-message" name="contact-message" rows="5"> </textarea>
+                        </p>
+                        <p>
+                            <input id="submit_button" type="submit" value="send my message"> </p>
+                    </form>
+            </div>
+        </section>
+        <footer id = "footer-layout">
+              <p> &copy; <a href="dcu.ie/">DCU 2023-2024</a>
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Konrad Kunkel</span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text">This is student coursework</span> 
+				<span class="footer-separator">&middot;</span>
+				<span class="footer-text">Lecturer<a href="http://www.computing.dcu.ie/~jkernan">Jane Kernan</a></span> 
+				<span class="footer-separator">&middot;</span> 
+				<span class="footer-text"><a href="http://validator.w3.org/check?uri=referer" title="W3C HTML Validation Service" >Valid HTML</a><br></span> 
+			</p>         
+        </footer>
+    </main>
+</body>
+</html>
