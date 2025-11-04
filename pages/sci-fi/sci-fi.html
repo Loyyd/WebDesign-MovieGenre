@@ -13,26 +13,28 @@
 
 <body>
     <main class= "main-style">
-        <nav class="page-nav">
+	    
+        <nav class="page-nav"> <!-- The <nav> tag is there for quick links to navigate between the website and bring structure in your website.-->
             <img src="images/svg/logo.svg" alt="Logo" class="logo">
-            <a href="index.html">HOME</a>
-            <a href="/pages/sci-fi/sci-fi.html">SCI-FI</a>
-            <a href="/pages/adventure/adventure.html">ADVENTURE</a>
-            <a href="/pages/music/music.html">MUSIC</a>
-            <a href="/pages/horror/horror.html">HORROR</a>
+            <a href="#about">HOME</a>
+            <a href="#work">SCI-FI</a>
+            <a href="#images">ADVENTURE</a>
+            <a href="#contact">MUSIC</a>
+            <a href="#contact">HORROR</a>
             <a href="https://www.youtube.com/" target="_blank">
-            <img src="images/svg/youtube-icon.svg" alt="YouTube" class="social-icon">
+                <img src="images/svg/youtube-icon.svg" alt="YouTube" class="social-icon">
             </a>
         </nav>
 
-        <header class="page-header"> 
-            <div class="header-content">
+        <header class="page-header">  <!-- A header is the top of the page, indicating what the page is about, including the title-->
+            <div class="header-content">  <!-- A div is an empty block element that is used to organize or group elements together.-->
                 <h1>Title</h1>
                 <p>Subtitle</p>
             </div>
         </header>
        
-        <section class="about-me container">
+    <!-- An ID gives an element a distinct identifier. With that you can either style this unique element with that ID, or you can jump to that part of the website. (how it is used here)-->
+        <section id="about" class="about-me container">  <!--A Section is similar like a chapter in a book. It covers a specific topic and is there to organize the website.-->
             <div class="container-content">
                 <h2>Header 2</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam consectetur adipisci tenetur maxime sunt ratione quis quasi dolores soluta aliquam. Cum, atque accusantium dolorum nostrum dicta ad nihil cupiditate iste?</p>
@@ -56,14 +58,15 @@
             </div>
         </section>
         <hr>
-        <section>
+        <section id="work" class="work-experience container">
             <div class="container-content">
                 <h2>Header 2</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae ullam cum laboriosam doloremque quis error accusantium a aperiam illum modi, minima nesciunt, quia quo quasi, ad consectetur iste incidunt maiores.</p>
+                <p class="download-button-container"><a href="download/resume.pdf" download class="download-link">Download Button</a></p>
             </div>
         </section>
 				<hr>
-        <section>
+        <section id="images" class="image-gallery container">
             <div class="container-content">
                 <h2>Image Gallery</h2>
                     <figure class="an-image">
@@ -74,7 +77,7 @@
             
         </section>
         <hr>
-        <section class="contact-me container">
+        <section id="contact" class="contact-me container">
             <div class="container-content">
                 <h2>Contact Me</h2>
                 <form action="https://formspree.io/konrad.kunkel2@mail.dcu.ie" method="post">
