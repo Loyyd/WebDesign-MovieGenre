@@ -16,9 +16,7 @@ font-secondary: 'Poppins', sans-serif;
 
 
 html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #121212; /* bg-darkest */
+    background-color: #121212;
     color: #e0e0e0;
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
@@ -30,19 +28,23 @@ h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     margin-top: 1em;
     margin-bottom: 0.5em;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 h1 {
     font-size: 2.5em;
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
 
 h2 {
     font-size: 2em;
+    
 }
 
 h3 {
     font-size: 1.5em;
+    
 }
 
 p {
@@ -79,16 +81,22 @@ a:hover {
 
 .page-nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #121212;
-    text-align: center;
+    padding: 20px 30px;
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
 }
 
 .logo {
     height: 40px;
     margin-right: 70px;
+    filter: drop-shadow(0 2px 4px rgba(204, 0, 0, 0.5));
 }
 
 .page-nav a {
@@ -132,8 +140,11 @@ a:hover {
 }
 
 hr {
-    width: 80%;
-    border-color: #444;
+    width: 85%;
+    margin: 40px auto;
+    border: none;
+    border-top: 1px solid rgba(204, 0, 0, 0.3);
+    box-shadow: 0 1px 2px rgba(204, 0, 0, 0.2);
 }
 
 .an-image {
@@ -175,6 +186,7 @@ hr {
     padding: 8px;
     margin-bottom: 15px;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 .contact-me textarea {
@@ -190,11 +202,14 @@ hr {
 }
 
 #footer-layout {
-    background-color: #CC0000;
+    background: linear-gradient(135deg, #CC0000 0%, #990000 100%);
     color: #ffffff; 
     text-align: center;
     padding: 15px 0;
     font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .footer-separator {
@@ -211,6 +226,12 @@ hr {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
 
 
 
@@ -220,6 +241,7 @@ hr {
 .about-action-content {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
@@ -248,25 +270,26 @@ hr {
     margin: 0 auto;
 }
 
-.matrix-container {
+.matrix-container, .starwars-container {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 20px; /* Space between content and trailer */
 }
 
-.matrix-text-content {
+.matrix-text-content, .starwars-text-content {
     flex: 1;
     padding-right: 20px;
 }
 
-.matrix-image-content {
+.matrix-image-content, .starwars-image-content {
     flex: 0.6;
     text-align: center;
 }
 
-.matrix-image-content img {
+.matrix-image-content img, .starwars-image-content img {
     max-width: 100%;
     height: auto;
 }
@@ -276,4 +299,8 @@ hr {
     max-width: 800px; /* Match container width */
     display: block;
     margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(204, 0, 0, 0.5);
+    border: 2px solid #CC0000;
+    border-radius: 30px;
+
 }
