@@ -32,7 +32,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 2.5em;
     font-size: 3em;
     text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
 }
@@ -177,7 +176,7 @@ hr {
 
 .contact-me label {
     margin-bottom: 5px;
-    color: #333333;
+    color: #e0e0e0; /* Changed to a lighter color for better readability */
 }
 
 .contact-me input,
@@ -303,4 +302,22 @@ img {
     border: 2px solid #CC0000;
     border-radius: 30px;
 
+}
+
+.R2D2-move {
+  width: 300px;
+  height: 300px;
+  position: sticky;
+  top: 20px;
+  animation-name: move-left-to-right;
+  animation-timeline: scroll(root);
+}
+
+@keyframes move-left-to-right {
+  from {
+    transform: translateX(-1000%);
+  }
+  to {
+    transform: translateX(200%);
+  }
 }
