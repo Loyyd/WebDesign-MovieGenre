@@ -14,6 +14,12 @@ font-primary: 'Futura Thin', sans-serif;
 font-secondary: 'Poppins', sans-serif;
 */
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 html, body {
     background-color: #121212;
@@ -263,61 +269,39 @@ img {
     height: auto;
 }
 
-.matrix-section-content {
+.action-movie-links {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
 }
 
-.matrix-container, .starwars-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+
+.action-movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 60px;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    margin-bottom: 20px; /* Space between content and trailer */
+    
 }
 
-.matrix-text-content, .starwars-text-content {
-    flex: 1;
-    padding-right: 20px;
-}
-
-.matrix-image-content, .starwars-image-content {
-    flex: 0.6;
-    text-align: center;
-}
-
-.matrix-image-content img, .starwars-image-content img {
-    max-width: 100%;
-    height: auto;
-}
-
-.trailer {
-    width: 100%;
-    max-width: 800px; /* Match container width */
+.action-movie-grid a {
     display: block;
-    margin: 0 auto;
-    box-shadow: 0 10px 30px rgba(204, 0, 0, 0.5);
-    border: 2px solid #CC0000;
     border-radius: 30px;
-
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.R2D2-move {
-  width: 300px;
-  height: 300px;
-  position: sticky;
-  top: 20px;
-  animation-name: move-left-to-right;
-  animation-timeline: scroll(root);
+.action-movie-grid a:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6);
 }
 
-@keyframes move-left-to-right {
-  from {
-    transform: translateX(-1000%);
-  }
-  to {
-    transform: translateX(200%);
-  }
+.action-movie-grid img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
+
