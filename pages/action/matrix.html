@@ -4,261 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Matrix - 1999</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
-            background: #1a1a1a;
-            color: #fff;
-            overflow-x: hidden;
-        }
-
-        .hero-section {
-            position: relative;
-            height: 100vh;
-            background-image: url('images/matrix/matrix-background.jpg');
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            align-items: flex-end;
-            padding: 60px;
-        }
-
-        nav {
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            display: flex;
-            align-items: center;
-            padding: 20px 60px;
-            background: linear-gradient(to bottom, rgba(0,0,0,0.7), transparent);
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 20px;
-            font-size: 0.95em;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #00ff41;
-        }
-
-        .nav-right {
-            margin-left: auto;
-            display: flex;
-            gap: 20px;
-            align-items: center;
-        }
-
-        .hero-content {
-            max-width: 800px;
-        }
-
-        h1 {
-            font-size: 5em;
-            font-weight: 700;
-            margin-bottom: 15px;
-            letter-spacing: -2px;
-        }
-
-        .rating {
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            margin-bottom: 20px;
-            font-size: 1em;
-        }
-
-        .star {
-            color: #ffd700;
-            font-size: 1.3em;
-        }
-
-        .rating span {
-            color: #ccc;
-        }
-
-        .movie-meta {
-            display: flex;
-            gap: 15px;
-            margin-bottom: 25px;
-            color: #ccc;
-            font-size: 0.95em;
-        }
-
-        .description {
-            font-size: 1.15em;
-            line-height: 1.6;
-            color: #ddd;
-            margin-bottom: 30px;
-            max-width: 700px;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 15px;
-        }
-
-        .btn {
-            padding: 15px 35px;
-            font-size: 1em;
-            font-weight: 600;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: all 0.3s;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .btn-primary {
-            background: #0066ff;
-            color: #fff;
-        }
-
-        .btn-primary:hover {
-            background: #0052cc;
-            transform: scale(1.05);
-        }
-
-        .btn-secondary {
-            background: rgba(255,255,255,0.2);
-            color: #fff;
-            backdrop-filter: blur(10px);
-        }
-
-        .btn-secondary:hover {
-            background: rgba(255,255,255,0.3);
-        }
-
-        .content-section {
-            padding: 60px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 1.8em;
-            margin-bottom: 30px;
-            font-weight: 600;
-        }
-
-        .posters-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-            gap: 15px;
-            margin-bottom: 60px;
-        }
-
-        .poster {
-            aspect-ratio: 2/3;
-            background: linear-gradient(135deg, #003300, #001a00);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-            cursor: pointer;
-            max-width: 200px;
-        }
-
-        .poster:hover {
-            transform: scale(1.05);
-        }
-
-        .actors-section {
-            display: flex;
-            gap: 20px;
-            overflow-x: auto;
-            padding-bottom: 20px;
-        }
-
-        .actor-card {
-            text-align: center;
-            min-width: 120px;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .actor-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .actor-img {
-            max-width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto 10px;
-        }
-
-        .actor-name {
-            font-size: 0.9em;
-            font-weight: 500;
-        }
-
-        .actor-character {
-            font-size: 0.8em;
-            color: #999;
-            margin-top: 3px;
-        }
-
-        .view-all {
-            color: #0066ff;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9em;
-        }
-
-        .icon {
-            width: 20px;
-            height: 20px;
-            fill: currentColor;
-        }
-
-        @media (max-width: 768px) {
-            .hero-section {
-                padding: 30px;
-            }
-            
-            h1 {
-                font-size: 3em;
-            }
-            
-            nav {
-                padding: 20px 30px;
-            }
-            
-            .content-section {
-                padding: 30px;
-            }
-        }
-    </style>
     <link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../action/movies.css">
 </head>
 <body>
-    <div class="hero-section">
-        <nav>
+    <div class="main-section">
+        <div class="movie-nav">
             <img src="../../images/svg/logo.svg" alt="Logo" class="logo">
-            <a href="action.html">GO BACK</a>
-        </nav>
+            <a href="action.html">← GO BACK</a>
+        </div>
 
-        <div class="hero-content">
+        <div class="main-content">
             <h1>The Matrix</h1>
             <div class="rating">
                 <span class="star">★</span>
                 <strong>8.7</strong>
-                <span>| 1.9M</span>
+                <span>| 2.2M</span>
             </div>
-            <div class="movie-meta">
+            <div class="movie-specs">
                 <span>2h 16m</span>
                 <span>•</span>
                 <span>Action, Sci-Fi</span>
@@ -266,58 +29,56 @@
                 <span>1999</span>
             </div>
             <p class="description">
-                A computer hacker learns from mysterious rebels about the true nature of his reality 
-                and his role in the war against its controllers. Set in a dystopian future where humanity 
-                is unknowingly trapped inside a simulated reality.
+                The Matrix is about Neo, a computer hacker, who discovers that his whole world is a computer simulation. 
+                He makes it out and realises that machines put them into simulated realities to control humanity
             </p>
             <div class="buttons">
-                <button class="btn btn-primary">
-                    ▶ IMDB WATCH>
-                </button>
-                <button class="btn btn-secondary">
+                <a class="btn imbd-btn-primary" href="https://www.imdb.com/title/tt0133093/" target="_blank">
+                    ▶ IMDB WATCH
+                </a>
+                <a class="btn trailer-btn-secondary" href="https://www.youtube.com/watch?v=vKQi3bBA1y8" target="_blank">
                     TRAILER
-                </button>
+                </a>
             </div>
         </div>
     </div>
 
     <div class="content-section">
-        <h2 class="section-title">Posters</h2>
+        <h2 class="section-title">Posters / Photos</h2>
         <div class="posters-grid">
-            <img class="poster" src="images/matrix/matrix-poster-1.webp" alt="__-">
-            <img class="poster" src="images/matrix/matrix-poster-2.jpg" alt="__-">
-            <img class="poster" src="images/matrix/matrix-poster-3.webp" alt="__-">
-            <img class="poster" src="images/matrix/matrix-poster-4.webp" alt="__-">
-            <img class="poster" src="images/matrix/matrix-poster-5.webp" alt="__-">
+            <img class="poster" src="images/matrix/images/matrix-poster-1.webp" alt="__-">
+            <img class="poster" src="images/matrix/images/matrix-poster-2.jpg" alt="__-">
+            <img class="poster" src="images/matrix/images/matrix-poster-3.webp" alt="__-">
+            <img class="poster" src="images/matrix/images/matrix-poster-4.webp" alt="__-">
+            <img class="poster" src="images/matrix/images/matrix-poster-5.webp" alt="__-">
         </div>
 
         <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
             <h2 class="section-title" style="margin: 0;">Actors</h2>
-            <a href="#" class="view-all">VIEW ALL →</a>
         </div>
         <div class="actors-section">
             <div class="actor-card">
-                <img class="actor-img" src="images/matrix/keanu-reeves.jpg" alt="">
+                <img class="actor-img" src="images/matrix/actors/keanu-reeves.jpg" alt="">
                 <div class="actor-name">Keanu Reeves</div>
                 <div class="actor-character">Neo</div>
             </div>
             <div class="actor-card">
-                <img class="actor-img" src="images/matrix/keanu-reeves.jpg" alt="">
+                <img class="actor-img" src="images/matrix/actors/laurence-fishburne.jpg" alt="">
                 <div class="actor-name">Laurence Fishburne</div>
                 <div class="actor-character">Morpheus</div>
             </div>
             <div class="actor-card">
-                <img class="actor-img" src="images/matrix/keanu-reeves.jpg" alt="">
+                <img class="actor-img" src="images/matrix/actors/carrie-anne-moss.jpg" alt="">
                 <div class="actor-name">Carrie-Anne Moss</div>
                 <div class="actor-character">Trinity</div>
             </div>
             <div class="actor-card">
-                <img class="actor-img" src="images/matrix/keanu-reeves.jpg" alt="">
+                <img class="actor-img" src="images/matrix/actors/hugo-weaving.jpg" alt="">
                 <div class="actor-name">Hugo Weaving</div>
                 <div class="actor-character">Agent Smith</div>
             </div>
             <div class="actor-card">
-                <img class="actor-img" src="images/matrix/keanu-reeves.jpg" alt="">
+                <img class="actor-img" src="images/matrix/actors/joe-pantoliano.jpg" alt="">
                 <div class="actor-name">Joe Pantoliano</div>
                 <div class="actor-character">Cypher</div>
             </div>
