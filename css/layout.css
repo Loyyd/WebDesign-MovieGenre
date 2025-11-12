@@ -237,9 +237,29 @@ img {
 }
 
 
+.music-poster {
+    border-radius: 8px;
+}
+.music-poster-text {
+    position: absolute;
+    border-color: rgba(138, 136, 136, 0.412);
+    padding: 10px;
+    color: #e0e0e0;
+    font-size: 14px;
+    text-align: center;
+    margin:25px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
 
+.music-poster:hover {
+    transform: scale(1.003);
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
 
-
+.music-poster:hover + .music-poster-text {
+    visibility: visible;
+}
 
 /* Action Layouts */
 
