@@ -239,25 +239,73 @@ img {
 
 .music-poster {
     border-radius: 8px;
+    margin-right: 25%;
+}
+.music-poster2 {
+    border-radius: 8px;
+     margin-right: 24%;
+}
+.music-poster3 {
+    border-radius: 8px;
 }
 .music-poster-text {
     position: absolute;
     border-color: rgba(138, 136, 136, 0.412);
     padding: 10px;
+    max-width: 120px;
     color: #e0e0e0;
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
-    margin:25px;
     background-color: #4d4b4b;
     visibility: hidden;
 }
 
+.music-poster-text2 {
+    position: absolute;
+    border-color: rgba(138, 136, 136, 0.412);
+    padding: 10px;
+    max-width: 120px;
+    color: #e0e0e0;
+    font-size: 10px;
+    text-align: center;
+    
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+
+.music-poster-text3 {
+    position: absolute;
+    border-color: rgba(138, 136, 136, 0.412);
+    padding: 10px;
+    max-width: 120px;
+    color: #e0e0e0;
+    font-size: 10px;
+    text-align: center;
+    
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
 .music-poster:hover {
-    transform: scale(1.003);
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+.music-poster2:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+    align-content: center;
+}
+.music-poster3:hover {
+    transform: scale(1.05);
     box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
 }
 
 .music-poster:hover + .music-poster-text {
+    visibility: visible;
+}
+.music-poster2:hover + .music-poster-text2 {
+    visibility: visible;
+}
+.music-poster3:hover + .music-poster-text3 {
     visibility: visible;
 }
 
