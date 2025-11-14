@@ -152,16 +152,6 @@ hr {
     box-shadow: 0 1px 2px rgba(204, 0, 0, 0.2);
 }
 
-.quick-buttons{
-    padding: 15px 35px;
-    border-radius: 40px;
-    display: flex;
-    background: #000000;
-    color: #ffffff;
-    max-width: 240px;
-    font-size: 20px;
-}
-
 .an-image {
     margin-bottom: 40px;
     margin-left: auto;
@@ -251,14 +241,10 @@ img {
     margin: 0 auto;
     padding: 15px;
     text-align: center;
+    gap: 140px;
 }
-.container-content-music a {
-    position: relative;
-    margin-right: 66px;
-    padding: 15px;
-    text-align: center;
-  margin: 25px;
-}
+
+
 
 .posters-grid {
     align-items: center;
@@ -351,10 +337,35 @@ img {
 }
 .music-poster-btn{
     order:0;
+    margin: 70px;
     
 }
+.sticks{
+    max-width: 118px;
+    order: 1;
+}
+.ipod{
+    max-width: 118px;
+    order: 1;
+}
+.mic{
+  max-width: 118px;
+    order: 1;
+}
+.lamp{
+     max-width: 118px;
+    order: 1;
+}
+.mbuttons-grid{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-height: 118;
+}
+
 .Mama-posters-grid{
-    align-self: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
@@ -499,7 +510,6 @@ img {
 
 .header-left p {
     font-size: 1.2rem;
-	font-size: clamp(0.9rem, 1.2vw, 1.3rem);
     color: #555;
     line-height: 1.6;
 }
@@ -707,3 +717,37 @@ padding: 15px 0;
 font-size: 14px; 
 }
 
+
+
+.baby-main-content{
+    align-items: right;
+    margin-left: 900px;
+    align-self: right;
+    text-align: center;
+}
+.baby-description{
+    max-width: 600px;
+    flex-direction: column;
+}
+.baby-content-grid{
+     display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    gap: 70px;
+    margin: 40px;
+}
+.baby-content-section{
+    max-width: 800px;
+    order: 0;
+}
+.baby-scene{
+    order: 1;
+    padding: 30px;
+    background-color: rgb(223, 86, 171);
+    border-radius: 3px;
+    max-width: 620px;
+
+}
+.baby-scene :hover + .baby-scene-text{
+    visibility: visible;
+
+}
