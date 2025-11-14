@@ -1,7 +1,7 @@
 .main-section {
     position: relative;
     height: 70vh;
-    background-image: url('images/matrix/matrix-poster.jpg');
+    background-image: url('images/matrix/matrix-poster.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,6 +93,23 @@
     margin: 0 auto;
 }
 
+.content-section p {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.content-section ul {
+    list-style-type: '★ ';
+    padding-left: 20px;
+    margin-bottom: 60px;
+}
+
+.content-section li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    line-height: 1.6;
+}
+
 .section-title {
     font-size: 1.8em;
     margin-bottom: 30px;
@@ -125,19 +142,19 @@
     padding-bottom: 20px;
 }
 
-.actor-card {
+.actor {
     text-align: center;
     min-width: 120px;
     transition: transform 0.3s;
 }
 
-.actor-card:hover {
+.actor:hover {
     transform: translateY(-5px);
 }
 
 .actor-img {
-    max-width: 100px;
-    height: 100px;
+    width: 100px;
+    height: auto;
     border-radius: 50%;
     margin: 0 auto 10px;
 }
