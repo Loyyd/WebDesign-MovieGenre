@@ -152,6 +152,16 @@ hr {
     box-shadow: 0 1px 2px rgba(204, 0, 0, 0.2);
 }
 
+.quick-buttons{
+    padding: 15px 35px;
+    border-radius: 40px;
+    display: flex;
+    background: #000000;
+    color: #ffffff;
+    max-width: 240px;
+    font-size: 20px;
+}
+
 .an-image {
     margin-bottom: 40px;
     margin-left: auto;
