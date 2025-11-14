@@ -243,7 +243,10 @@ img {
     text-align: center;
 }
 .container-content-music a {
-  margin: 25px; auto
+    position: relative;
+    margin-right: 66px;
+    padding: 15px;
+    text-align: center;
 }
 .posters-grid {
     align-items: center;
@@ -294,7 +297,6 @@ img {
 
 .music-poster-text3 {
     border-color: rgba(138, 136, 136, 0.412);
-   
     color: #e0e0e0;
     font-size: 12px;
     background-color: #4d4b4b;
@@ -336,10 +338,8 @@ img {
     visibility: visible;
 }
 .music-poster-btn{
-    order:1;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
+    order:0;
+    
 }
 
 
