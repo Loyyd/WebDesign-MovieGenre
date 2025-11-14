@@ -235,6 +235,16 @@ img {
     max-width: 100%;
     height: auto;
 }
+.container-content-music {
+    align-self: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+}
+.container-content-music a {
+  margin: 25px; auto
+}
 .posters-grid {
     align-items: center;
     display: flex;
@@ -258,30 +268,43 @@ img {
     order: 0;
     margin: 5px;
 }
+.music-poster4 {
+    border-radius: 8px;
+    order: 0;
+    margin: 5px;
+}
 .music-poster-text {
     
    border-color: rgba(138, 136, 136, 0.412);
-    max-width: 120px;
+    max-width: 140px;
     color: #e0e0e0;
-    font-size: 20px;
+    font-size: 12px;
     background-color: #4d4b4b;
     visibility: hidden;
 }
 
 .music-poster-text2 {
     border-color: rgba(138, 136, 136, 0.412);
-    max-width: 120px;
+    max-width: 140px;
     color: #e0e0e0;
-    font-size: 20px;
+    font-size: 12px;
     background-color: #4d4b4b;
     visibility: hidden;
 }
 
 .music-poster-text3 {
     border-color: rgba(138, 136, 136, 0.412);
-    max-width: 120px;
+   
     color: #e0e0e0;
-    font-size: 20px;
+    font-size: 12px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+.music-poster-text4 {
+    border-color: rgba(138, 136, 136, 0.412);
+    max-width: 140px;
+    color: #e0e0e0;
+    font-size: 12px;
     background-color: #4d4b4b;
     visibility: hidden;
 }
@@ -290,10 +313,15 @@ img {
 }
 .music-poster2:hover {
     box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+    align-content: center;
 }
 .music-poster3:hover {
     box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
 }
+.music-poster4:hover {
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+
 
 .music-poster:hover + .music-poster-text {
     visibility: visible;
@@ -304,8 +332,16 @@ img {
 .music-poster3:hover + .music-poster-text3 {
     visibility: visible;
 }
+.music-poster4:hover + .music-poster-text4 {
+    visibility: visible;
+}
+.music-poster-btn{
+    order:1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
 
-/* Action Layouts */
 
 .about-action-content {
     display: flex;
