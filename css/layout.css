@@ -499,6 +499,7 @@ img {
 
 .header-left p {
     font-size: 1.2rem;
+	font-size: clamp(0.9rem, 1.2vw, 1.3rem);
     color: #555;
     line-height: 1.6;
 }
