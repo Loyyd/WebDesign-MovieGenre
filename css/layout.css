@@ -243,8 +243,9 @@ img {
     text-align: center;
 }
 .container-content-music a {
-  margin: 25px; auto
+  margin: 25px;
 }
+
 .posters-grid {
     align-items: center;
     display: flex;

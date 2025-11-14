@@ -1,7 +1,6 @@
 .main-section {
     position: relative;
     height: 70vh;
-    background-image: url('images/matrix/matrix-poster.webp');
     background-size: cover;
     background-position: center;
     display: flex;
