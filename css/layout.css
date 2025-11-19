@@ -244,7 +244,14 @@ img {
     gap: 140px;
 }
 
-
+.about-music-content{
+    align-self: center;
+    margin-left: 32%;
+}
+.about-music-text{
+    text-align: center;
+    max-width: 600px;
+}
 
 .posters-grid {
     align-items: center;
@@ -340,6 +347,9 @@ img {
     margin: 70px;
     
 }
+.trombone-base{
+    max-width: 200px;
+}
 .sticks{
     max-width: 118px;
     order: 1;
@@ -370,6 +380,8 @@ img {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     margin-bottom: 60px;
+    align-items: center;
+    margin-left: 120px;
 }
 
 .about-action-content {
@@ -732,22 +744,35 @@ font-size: 14px;
 .baby-content-grid{
      display: grid;
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-    gap: 70px;
+    gap: 150px;
     margin: 40px;
 }
 .baby-content-section{
     max-width: 800px;
     order: 0;
+    margin: 25px;
 }
 .baby-scene{
-    order: 1;
-    padding: 30px;
+    order: 0;
+    padding: 20px;
     background-color: rgb(223, 86, 171);
     border-radius: 3px;
     max-width: 620px;
 
 }
-.baby-scene :hover + .baby-scene-text{
-    visibility: visible;
+.mama-scene{
+    order: 1;
+    padding: 20px;
+    background-color: rgb(55, 125, 171);
+    border-radius: 3px;
+    max-width: 620px;
+
+}
+.Whip-scene{
+    order: 1;
+    padding: 20px;
+    background-color: rgb(240, 97, 30);
+    border-radius: 3px;
+    max-width: 620px;
 
 }
