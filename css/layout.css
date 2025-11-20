@@ -258,6 +258,7 @@ img {
     display: flex;
     flex-direction: row;
 }
+
 .poster-title {
     text-align: center;
 }
@@ -376,12 +377,13 @@ img {
 }
 
 .Mama-posters-grid{
+    order: 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     margin-bottom: 60px;
-    align-items: center;
-    margin-left: 120px;
+    align-items: right;
+    max-width: 230px;
 }
 
 .about-action-content {
@@ -742,8 +744,8 @@ font-size: 14px;
     flex-direction: column;
 }
 .baby-content-grid{
-     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+    
+    
     gap: 150px;
     margin: 40px;
 }
@@ -751,9 +753,10 @@ font-size: 14px;
     max-width: 800px;
     order: 0;
     margin: 25px;
+    max-height: 800px;
 }
 .baby-scene{
-    order: 0;
+    order: 2;
     padding: 20px;
     background-color: rgb(223, 86, 171);
     border-radius: 3px;
@@ -761,7 +764,7 @@ font-size: 14px;
 
 }
 .mama-scene{
-    order: 1;
+    order: 2;
     padding: 20px;
     background-color: rgb(55, 125, 171);
     border-radius: 3px;
@@ -769,10 +772,24 @@ font-size: 14px;
 
 }
 .Whip-scene{
-    order: 1;
+    order: 2;
     padding: 20px;
     background-color: rgb(240, 97, 30);
     border-radius: 3px;
     max-width: 620px;
 
+}
+
+.music-content-grid{
+  display: grid;
+  grid-template-columns:  fit-content(1000px) auto  fit-content(500px);
+  
+  align-items: right;
+  gap: 20px;
+
+}
+.mus-actors-section {
+    order: 1;
+    align-self: right;
+    margin: 200px;
 }
