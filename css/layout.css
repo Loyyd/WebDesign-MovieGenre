@@ -788,7 +788,14 @@ font-size: 14px;
     max-width: 620px;
 
 }
-
+.aladin-scene{
+    order: 2;
+    padding: 20px;
+    background-color: rgb(107, 30, 201);
+    border-radius: 3px;
+    max-width: 620px;
+    margin: 60px;
+}
 .music-content-grid{
   display: grid;
   grid-template-columns:  fit-content(1000px) auto  fit-content(500px);
@@ -801,4 +808,60 @@ font-size: 14px;
     order: 1;
     align-self: right;
     margin: 200px;
+    font-family: 'Futura Thin', sans-serif;
+}
+
+.musactors-section {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.musactor {
+    text-align: center;
+    min-width: 120px;
+    transition: transform 0.3s;
+}
+
+.musactor:hover {
+    transform: translateY(-5px);
+}
+
+.musactor-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+}
+
+.musactor-name {
+    
+    font-weight: 500;
+}
+
+.musactor-character {
+    font-size: 0.9rem;
+    color: #c3c3c3;
+    margin-top: 3px;
+}
+.fav-song{
+    display: grid;
+  grid-template-columns:  fit-content(300px) fit-content(250px);
+    margin: 60px;
+    gap: 20px;
+    font-size: 20px;
+   
+}
+.artist{
+    order: 0;
+    border-radius: 5px;
+    max-block-size: 200px;
+}
+.artist-info{
+    order: 0;
+    max-width: 300px;
+}
+.music-content-grid h1{
+    text-align: center;
 }
