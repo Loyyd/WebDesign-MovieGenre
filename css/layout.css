@@ -555,6 +555,7 @@ img {
 	text-align: center;
 	background: linear-gradient(to bottom, #2a2a2a 0%, #1f1f1f 80%);
 	text-shadow: 4px 4px black;
+	background: #121212;
 }
 
 .movie-color{
