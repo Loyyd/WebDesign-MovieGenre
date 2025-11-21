@@ -488,6 +488,12 @@ img {
 	border-radius: 20px;
 	box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
+
+.seperator-h{
+	width: 100%;
+	margin: 0;
+}
+
 .movie-image-h{
 	max-width: 400px; 
 	max-height: 350px;
