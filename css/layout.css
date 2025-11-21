@@ -354,24 +354,40 @@ img {
     margin: 70px;
     
 }
-.trombone-base{
-    max-width: 200px;
-}
+
 .sticks{
     max-width: 118px;
     order: 1;
+    border-radius: 12px;
+}
+.sticks :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+
 }
 .ipod{
     max-width: 118px;
     order: 1;
+     border-radius: 12px;
+}
+.ipod :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+
 }
 .mic{
   max-width: 118px;
     order: 1;
+     border-radius: 12px;
+}
+.mic :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
 }
 .lamp{
      max-width: 118px;
     order: 1;
+     border-radius: 12px;
+}
+.lamp :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
 }
 .mbuttons-grid{
     align-items: center;
@@ -847,8 +863,8 @@ font-size: 14px;
 }
 .fav-song{
     display: grid;
-  grid-template-columns:  fit-content(300px) fit-content(250px);
-    margin: 60px;
+  grid-template-columns:  fit-content(300px) fit-content(350px);
+   
     gap: 20px;
     font-size: 20px;
    
@@ -858,10 +874,10 @@ font-size: 14px;
     border-radius: 5px;
     max-block-size: 200px;
 }
-.artist-info{
+.artist-info p {
     order: 0;
-    max-width: 300px;
+    max-width: 400px;
 }
-.music-content-grid h1{
+.music-content-grid h1 h3{
     text-align: center;
 }
