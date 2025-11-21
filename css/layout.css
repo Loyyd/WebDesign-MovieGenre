@@ -775,6 +775,19 @@ header {
     text-align: center;
     padding: 40px 20px;
 }
+
+.content-row-h {
+    flex-direction: column;
+    text-align: center;
+}
+
+.text-block-h {
+    font-size: 17px;
+}
+
+.image-block-h img {
+    max-width: 70%;
+}
 }
 
 #footer-layout a { 
