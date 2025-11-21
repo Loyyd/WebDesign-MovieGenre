@@ -170,3 +170,15 @@
     color: #999;
     margin-top: 3px;
 }
+
+.movie-quote {
+    font-style: italic;
+    padding: 20px 30px;
+    border-left: 4px solid #0066ff;
+    background-color: rgba(0, 102, 255, 0.08);
+    margin: 40px 0;
+    font-size: 1.15em;
+    line-height: 1.6;
+    color: #f0f0f0;
+    border-radius: 4px;
+}
