@@ -482,6 +482,44 @@ img {
 	gap: 20px;
 }
 
+.special-section {
+    width: 100%;
+    background-color: #2a2a2a;
+    padding: 40px 0;
+}
+
+.special-section .content-row-h {
+    width: 90%;
+    margin: auto;
+}
+
+.content-row-h {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.text-block-h {
+    flex: 1;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.image-block-h {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-block-h img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 8px;
+}
+
 .door-img{
 	max-width: 200%;
     height: auto;
