@@ -11,65 +11,92 @@
 </head>
 
 <body>
-    <main class= "main-style">
-        <nav class="page-nav">
+    <main class="main-style" role="main">
+        <nav class="page-nav" aria-label="Primary">
             <img src="../../images/svg/logo.svg" alt="Logo" class="logo">
-            <a href="../../index.html">HOME</a>
-            <a href="../sci-fi/sci-fi.html">SCI-FI</a>
-            <a href="action.html">ACTION</a>
-            <a href="../music/music.html">MUSIC</a>
-            <a href="../horror/horror.html">HORROR</a>
-            <a href="https://www.youtube.com/" target="_blank">
-            <img src="../../images/svg/youtube-icon.svg" alt="YouTube" class="social-icon">
-            </a>
+            <ul class="nav-list" style="list-style:none; display:flex; gap:14px; margin:0; padding:0; align-items:center;">
+                <li><a href="../../index.html">HOME</a></li>
+                <li><a href="../music/music.html">MUSIC</a></li>
+                <li><a href="../horror/horror.html">HORROR</a></li>
+                <li><a href="../sci-fi/sci-fi.html" aria-current="page">SCI-FI</a></li>
+                <li><a href="action.html">ACTION</a></li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" title="YouTube channel">
+                        <img src="../../images/svg/youtube-icon.svg" alt="YouTube" class="social-icon">
+                    </a>
+                </li>
+            </ul>
         </nav>
 
-        <header class="page-header" style="background-image: url('./images/space_2.jpg'); background-size: cover; background-position: center;"> 
-            <div class="header-content">
+        <header class="page-header" style="background-image: url('./images/space_2.jpg'); background-size: cover; background-position: center;">
+            <div class="header-content" role="banner">
                 <h1>SCI-FI</h1>
-                <p>Diving Into The World Of Sci-Fi Movies</p>
+                <p>Exploring the Unknown</p>
             </div>
         </header>
-       
-        <section class="about-Sci-Fi-content">
-                <div class="about-Sci-Fi-text">
-                    <h2>What is a Sci-Fi Movie?</h2>
-                    <p>
-                        Sci-Fi movies are movies that have big stunts, explosion, tension and energy that keep the viewer engaged. 
-                        Good Visual Effects and Sound effects is what adds a lot to the movie too. </p>
-                    <h3>Sci-Fi movies cover concepts such as:</h3>
-                    <ul>
-                        <li>Philosophical concepts</li>
-                        <li>Genetic Concepts and Human Evolution</li>
-                        <li>Time Travel and parallel universes</li>
-                        <li>Impeccable storytelling</li>
-                        <li>Alien Life and Technology</li>
-                    </ul>
-                </div>
-                <div class="Space-image">
-                    <img src="images/space.jpg" alt="Space">
-                </div>
+
+    
+        <section class="about-Sci-Fi-content" aria-labelledby="about-sf-title">
+            <figure class="Space-image" role="img" aria-label="Deep space visual">
+                <img src="images/space.jpg" alt="A starfield and nebula" />
+                <figcaption style="display:none;">Space scene</figcaption>
+            </figure>
+
+            <article class="about-Sci-Fi-text" id="about-sf-title">
+                <h2>What are Sci-fi movies?</h2>
+                <p>
+                    Sci-Fi movies are movies that have big stunts, explosion, tension and energy that keep the viewer engaged. 
+                    Good Visual Effects and Sound effects is what adds a lot to the movie too.
+
+                <h3>Common themes in Sci-FI</h3>
+                <ul>
+                    <li>Philosophical concepts</li>
+                    <li>Genetic Concepts and Human Evolution</li>
+                    <li>Time Travel and parallel universes</li>
+                    <li>Impeccable storytelling</li>
+                    <li>Alien Life and Technology</li>
+                </ul>
+            </article>
         </section>
-        <section class="sci-fi-movie-links">
-            <h2>Movies</h2>
-            <div class="sci-fi-movie-grid">
-                <a href="Blade_Runner_2049.html">
-                    <img class="poster" src="images/Blade_Runner_2049/Blade_Runner_2049 Poster.jpg" alt="Blade_Runner_2049 Poster">
-                </a>
-                <a href="Inception.html">
-                    <img class="poster" src="images/Inception/Inception Poster.jpg" alt="Inception-Poster">
-                </a>
-                <a href="Interstellar.html">
-                    <img class="poster" src="images/Interstellar/Interstellar Poster.jpg" alt="Interstellar-Poster">
-                </a>
-                <a href="Tenet.html">
-                    <img class="poster" src="images/Tenet/Tenet Poster.webp" alt="Tenet-Poster">
-                </a>
+
+        
+        <section class="sci-fi-movie-links" aria-labelledby="movies-title">
+            <h2 id="movies-title">Featured films</h2>
+
+            <div class="sci-fi-movie-grid" role="list">
+                <figure role="listitem">
+                    <a href="Blade_Runner_2049.html" aria-label="Blade Runner 2049 details">
+                        <img class="poster" src="images/Blade_Runner_2049/Blade_Runner_2049 Poster.jpg" alt="Blade Runner 2049 poster">
+                    </a>
+                    <figcaption>Blade Runner 2049</figcaption>
+                </figure>
+
+                <figure role="listitem">
+                    <a href="Inception.html" aria-label="Inception details">
+                        <img class="poster" src="images/Inception/Inception Poster.jpg" alt="Inception poster">
+                    </a>
+                    <figcaption>Inception</figcaption>
+                </figure>
+
+                <figure role="listitem">
+                    <a href="Interstellar.html" aria-label="Interstellar details">
+                        <img class="poster" src="images/Interstellar/Interstellar Poster.jpg" alt="Interstellar poster">
+                    </a>
+                    <figcaption>Interstellar</figcaption>
+                </figure>
+
+                <figure role="listitem">
+                    <a href="Tenet.html" aria-label="Tenet details">
+                        <img class="poster" src="images/Tenet/Tenet Poster.webp" alt="Tenet poster">
+                    </a>
+                    <figcaption>Tenet</figcaption>
+                </figure>
             </div>
         </section>
-        </section>
+
         <hr>
-        <footer id = "footer-layout">
+
+        <footer id="footer-layout">
             <p> &copy; <a href="dcu.ie/">DCU 2025-2026</a>
 			  <span class="footer-separator">&middot;</span>
 			  <span class="footer-text">Parikshit Hari</span>
