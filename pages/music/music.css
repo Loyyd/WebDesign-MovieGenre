@@ -1,0 +1,600 @@
+.main-section {
+    position: relative;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 60px;
+}
+.page-nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: rgba(18, 18, 18, 0.95);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+    max-height: 100px;
+}
+.container-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.social-links {
+    margin: 10px 0 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links a {
+    text-decoration: none;
+    color: #CC0000;
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 70px;
+    filter: drop-shadow(0 2px 4px rgba(204, 0, 0, 0.5));
+}
+
+.page-nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: 500;
+    font-size: 1.1em;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.page-nav a:hover {
+    color: #CC0000; /* color-primary */
+}
+
+.movie-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.movie-nav a {
+    color: #fff;
+}
+.header-grid{
+    margin-top: 100px;
+    background-color: #4d4b4b;
+    row-gap: 20px;
+    grid-template-columns: fit-content(600)
+}
+.main-content-mus{
+    max-width: 600px;
+    background-color: #4d4b4b;
+}
+.mus-header{
+    order:1;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+.movie-specs-mus {
+    gap: 15px;
+    display: flex;
+    margin-bottom: 25px;
+    font-size: 1rem;
+    text-shadow: 1px 0px black
+}
+
+.description {
+    margin-bottom: 30px;
+    max-width: 700px;
+    text-shadow: 1px 0px black ;
+}
+
+.buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 15px 35px;
+    font-size: 1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imbd-btn-primary {
+    background: #94098a;
+    color: #fff;
+}
+
+.imbd-btn-primary:hover {
+    background: #cc00be;
+    color: #eefa07;
+    transform: scale(1.05);
+}
+
+.trailer-btn-secondary {
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    backdrop-filter: blur(10px);
+}
+
+.trailer-btn-secondary:hover {
+    background: rgba(255,255,255,0.3);
+    color: #fff;
+
+}
+
+
+
+
+.posters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-bottom: 60px;
+}
+
+.poster {
+    aspect-ratio: 2/3;
+    background: linear-gradient(135deg, #003300, #001a00);
+    border-radius: 8px;
+    transition: transform 0.3s;
+    max-width: 200px;
+}
+
+.poster:hover {
+    transform: scale(1.06);
+}
+
+
+
+.container-content-music {
+    align-self: center;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 15px;
+    text-align: center;
+    gap: 140px;
+}
+
+.about-music-content{
+    align-self: center;
+    margin-left: 32%;
+}
+.about-music-text{
+    text-align: center;
+    max-width: 600px;
+}
+
+.posters-grid {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.poster-title {
+    text-align: center;
+}
+.music-poster {
+    border-radius: 8px;
+    order: 0;
+    margin: 5px;
+}
+.music-poster2 {
+    border-radius: 8px;
+    order: 0;
+    margin: 5px;
+}
+.music-poster3 {
+    border-radius: 8px;
+    order: 0;
+    margin: 5px;
+}
+.music-poster4 {
+    border-radius: 8px;
+    order: 0;
+    margin: 5px;
+}
+.music-poster-text {
+    
+   border-color: rgba(138, 136, 136, 0.412);
+    max-width: 140px;
+    color: #e0e0e0;
+    font-size: 12px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+
+.music-poster-text2 {
+    border-color: rgba(138, 136, 136, 0.412);
+    max-width: 140px;
+    color: #e0e0e0;
+    font-size: 12px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+
+.music-poster-text3 {
+    border-color: rgba(138, 136, 136, 0.412);
+    color: #e0e0e0;
+    font-size: 12px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+.music-poster-text4 {
+    border-color: rgba(138, 136, 136, 0.412);
+    max-width: 140px;
+    color: #e0e0e0;
+    font-size: 12px;
+    background-color: #4d4b4b;
+    visibility: hidden;
+}
+.music-poster:hover {
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+.music-poster2:hover {
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+    align-content: center;
+}
+.music-poster3:hover {
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+.music-poster4:hover {
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+
+
+.music-poster:hover + .music-poster-text {
+    visibility: visible;
+}
+.music-poster2:hover + .music-poster-text2 {
+    visibility: visible;
+}
+.music-poster3:hover + .music-poster-text3 {
+    visibility: visible;
+}
+.music-poster4:hover + .music-poster-text4 {
+    visibility: visible;
+}
+.music-poster-btn{
+    order:0;
+    margin: 70px;
+    
+}
+
+.sticks{
+    max-width: 118px;
+    order: 1;
+    border-radius: 12px;
+}
+.sticks :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+
+}
+.ipod{
+    max-width: 118px;
+    order: 1;
+     border-radius: 12px;
+}
+.ipod :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+
+}
+.mic{
+  max-width: 118px;
+    order: 1;
+     border-radius: 12px;
+}
+.mic :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+.lamp{
+     max-width: 118px;
+    order: 1;
+     border-radius: 12px;
+}
+.lamp :hover{
+    box-shadow: 0 8px 16px rgba(185, 6, 192, 0.869);
+}
+.mbuttons-grid{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-height: 118;
+}
+
+.Mama-posters-grid{
+    order: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 15px;
+    margin-top: 60px;
+    align-items: right;
+    max-width: 230px;
+}
+
+
+html, body {
+    background-color: #121212;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Futura Thin', sans-serif;
+    color: #ffffff;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+h2 {
+    font-size: 3em;
+    
+}
+
+h3 {
+    font-size: 1.5em;
+    
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+a {
+    color: #CC0000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #FF3333;
+}
+
+.quick-buttons {
+    margin: 20px 0;
+    display: inline-block;
+    background-color: #CC0000;
+    color: #ffffff;
+    padding: 16px 32px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.quick-buttons:hover {
+    background-color: #ffffff;
+    color: #f00000;
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(204, 0, 0, 0.6);
+}
+
+.quick-buttons:active {
+    transform: scale(0.98);
+}
+
+.page-header {
+    background-color: #CC0000; /* color-primary */
+    color: #ffffff;
+    padding: 8px 0;
+    text-align: center;
+}
+
+.header-content{
+    font-size: 2em;
+    font-weight: 500;
+    color: #ffffff;
+    text-align: center;
+}
+
+
+
+.container-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+
+
+#footer-layout {
+    background: linear-gradient(135deg, #CC0000 0%, #990000 100%);
+    color: #ffffff; 
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer-separator {
+    margin: 0 10px;
+    color: #ffffff;
+}
+
+.footer-text {
+    color: #ffffff;
+}
+
+#footer-layout a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.baby-main-content{
+    align-items: right;
+    margin-left: 900px;
+    align-self: right;
+    text-align: center;
+}
+.baby-description{
+    max-width: 600px;
+    flex-direction: column;
+}
+.baby-content-grid{
+    
+    
+    gap: 150px;
+    margin: 40px;
+}
+.baby-content-section{
+    max-width: 800px;
+    order: 0;
+    margin: 50px;
+    list-style-type: none;
+    padding: 0px;
+    
+}
+.baby-scene{
+    order: 2;
+    padding: 20px;
+    background-color: rgb(223, 86, 171);
+    border-radius: 3px;
+    max-width: 620px;
+    margin: 50px;
+
+}
+.mama-scene{
+    order: 2;
+    padding: 20px;
+    background-color: rgb(55, 125, 171);
+    border-radius: 3px;
+    max-width: 620px;
+
+}
+.Whip-scene{
+    order: 2;
+    padding: 20px;
+    background-color: rgb(240, 97, 30);
+    border-radius: 3px;
+    max-width: 620px;
+
+}
+.aladin-scene{
+    order: 2;
+    padding: 20px;
+    background-color: rgb(107, 30, 201);
+    border-radius: 3px;
+    max-width: 620px;
+    margin: 60px;
+}
+.music-content-grid{
+  display: grid;
+  grid-template-columns:  fit-content(1000px) auto  fit-content(500px);
+  
+  align-items: right;
+  gap: 20px;
+
+}
+.mus-actors-section {
+    order: 1;
+    align-self: right;
+    margin: 200px;
+    font-family: 'Futura Thin', sans-serif;
+}
+
+.musactors-section {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 20px;
+}
+
+.musactor {
+    text-align: center;
+    min-width: 120px;
+    transition: transform 0.3s;
+}
+
+.musactor:hover {
+    transform: translateY(-5px);
+}
+
+.musactor-img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+    margin: 20px auto 10px;
+}
+
+.musactor-name {
+    
+    font-weight: 500;
+}
+
+.musactor-character {
+    font-size: 0.9rem;
+    color: #c3c3c3;
+    margin-top: 3px;
+}
+.fav-song{
+    display: grid;
+  grid-template-columns:  fit-content(300px) fit-content(350px);
+   
+    gap: 20px;
+    font-size: 20px;
+   
+}
+.artist{
+    order: 0;
+    border-radius: 5px;
+    max-block-size: 200px;
+}
+.artist-info p {
+    order: 0;
+    max-width: 400px;
+}
+.music-content-grid h1 h3{
+    text-align: center;
+}
