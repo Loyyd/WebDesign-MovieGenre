@@ -7,45 +7,10 @@
     align-items: flex-end;
     padding: 60px;
 }
-.page-nav {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 20px 30px;
-    background-color: rgba(18, 18, 18, 0.95);
-    backdrop-filter: blur(10px);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    max-height: 100px;
-}
-.container-content {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 15px;
-}
 
-.social-links {
-    margin: 10px 0 30px 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.social-links a {
-    text-decoration: none;
-    color: #CC0000;
-    display: flex;
-    align-items: center;
-    margin: 0 10px;
-}
 
-.social-icon{
-    width: 20px;
-    height: 20px;
-    display: inline-block;
-}
+
+
 
 .logo {
     height: 40px;
@@ -53,19 +18,6 @@
     filter: drop-shadow(0 2px 4px rgba(204, 0, 0, 0.5));
 }
 
-.page-nav a {
-    display: inline-block;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px 15px;
-    font-weight: 500;
-    font-size: 1.1em;
-    transition: color 0.3s ease, text-decoration 0.3s ease;
-}
-
-.page-nav a:hover {
-    color: #CC0000; /* color-primary */
-}
 
 .movie-nav {
     position: absolute;
@@ -391,40 +343,6 @@ a {
 a:hover {
     color: #FF3333;
 }
-
-.quick-buttons {
-    margin: 20px 0;
-    display: inline-block;
-    background-color: #CC0000;
-    color: #ffffff;
-    padding: 16px 32px;
-    font-size: 1.1em;
-    font-weight: 600;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-}
-
-.quick-buttons:hover {
-    background-color: #ffffff;
-    color: #f00000;
-    transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(204, 0, 0, 0.6);
-}
-
-.quick-buttons:active {
-    transform: scale(0.98);
-}
-
-.page-header {
-    background-color: #CC0000; /* color-primary */
-    color: #ffffff;
-    padding: 8px 0;
-    text-align: center;
-}
-
 .header-content{
     font-size: 2em;
     font-weight: 500;
@@ -443,7 +361,7 @@ a:hover {
 
 
 #footer-layout {
-    background: linear-gradient(135deg, #CC0000 0%, #990000 100%);
+    background: linear-gradient(135deg,#94098a,#cc00be);
     color: #ffffff; 
     text-align: center;
     padding: 15px 0;
