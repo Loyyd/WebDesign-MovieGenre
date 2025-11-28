@@ -38,13 +38,13 @@
     gap: 15px;
     margin-bottom: 25px;
     font-size: 0.95em;
-    text-shadow: 1px 0px black
+    text-shadow: 1px 0px black;
 }
 
 .description {
     margin-bottom: 30px;
     max-width: 700px;
-    text-shadow: 1px 0px black ;
+    text-shadow: 1px 0px black;
 }
 
 .buttons {
